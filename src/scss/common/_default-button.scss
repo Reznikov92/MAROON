@@ -1,0 +1,74 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+.button {
+   @include m.button(7px 27px 9px)
+   
+
+
+
+
+
+
+    // color: v.$link-text-color;
+    // background: v.$text-color-hero;
+
+    // &-triangle {
+    //     display: flex;
+    //     justify-content: space-evenly;
+    //     gap: 0.8rem;
+    //     align-items: center;
+    //     padding-left: 3.8rem;
+
+    //     @media (max-width:848px) {
+    //         gap: 0.9rem;
+    //     }
+
+    //     &::before {
+    //         content: '';
+    //         border-left: 2rem solid #fff;
+    //         border-top: 1rem solid transparent;
+    //         border-bottom: 1rem solid transparent;
+
+    //         @media (max-width:848px) {
+    //             border-top: 1.2rem solid transparent;
+    //             border-bottom: 1.1rem solid transparent;
+    //         }
+    //     }
+
+    //     &:hover::before {
+    //         content: '';
+    //         border-left: 2rem solid v.$text-color-hero;
+    //         border-top: 1rem solid transparent;
+    //         border-bottom: 1rem solid transparent;
+    //         transition: all 0.3s linear;
+    //     }
+    // }
+
+    // &:hover {
+    //     color: v.$text-color-hero;
+    //     background: v.$link-text-color;
+    //     transition: all 0.3s linear;
+    // }
+}
+
+// .button__bestsellers{
+// font-family: 'Mplus 1p';
+// font-style: normal;
+// font-weight: 500;
+// font-size: 16px;
+// line-height: 140%;
+// padding: 13px 27px 12px 47px;
+// border: 1px solid #B3BAC1;
+// border-radius: 2px;
+// transform: scale(0.85); 
+// }
+
+// .button__wrapper {
+//     font-size: 1.6rem;
+//     padding: 1.2rem 3rem;
+
+//     @media (max-width:848px) {
+//         padding: 1.3rem 3rem;
+//     }
+// }

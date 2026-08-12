@@ -1,0 +1,125 @@
+@use '../mixins' as m;
+
+.bestsellers {
+    position: relative;
+
+    &__container-hands {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 140px;
+        margin-right: -41px;
+    }
+
+    &__container {
+        display: flex;
+        margin-bottom: 25px;
+        gap: 81px;
+        margin-left: 98px;
+    }
+
+    &__info {
+        width: 219px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 43px;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 32px;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        max-width: 264px;
+        font-size: 18px;
+        line-height: 145%;
+        margin-bottom: 33px;
+    }
+
+    &__button {
+        @include m.button(6px 23px 10px 23px)
+    }
+
+    &__cards {
+        display: flex;
+        gap: 30px;
+
+        li {
+            width: 230px;
+        }
+    }
+
+    &__card {
+        width: 230px;
+        position: relative;
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 128px;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        right: 67px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    &__card-content-wrapper {
+        right: 51px;
+    }
+
+    &__card-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__card-text {
+        margin-bottom: 10px;
+        font-size: 13px;
+        line-height: 145%;
+        display: flex;
+        align-items: center;
+        color: #9A9DA0;
+    }
+
+    &__card-button {
+        font-size: 13px;
+        line-height: 145%;
+        color: #122947;
+        border-bottom: 1px solid #122947;
+    }
+
+    &__hands {
+        max-width: 26px;
+        display: flex;
+        gap: 32px;
+        margin-right: 198px;
+    }
+
+    &__img-left {
+        width: 26px;
+        height: 12px;
+        flex-shrink: 0; // Запрещает сжатие элемента 
+        min-width: 26px; // Гарантирует минимальную ширину 
+    }
+
+    &__img-right {
+        width: 26px;
+        height: 12px;
+        flex-shrink: 0; // Запрещает сжатие элемента 
+        min-width: 26px; // Гарантирует минимальную ширину 
+    }
+
+}

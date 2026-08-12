@@ -1,0 +1,36 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+@include m.font-face('../fonts/', 'MPLUS1p-Medium.woff2', 'MPLUS1p');
+@include m.font-face('../fonts/', 'Raleway-VariableFont_wght.woff2', 'Raleway');
+
+body {
+    background-color: v.$background-color;
+    font-weight: v.$font-weight;
+    color: v.$text-color;
+    font-family: "MPLUS1p";
+}
+
+html {
+  font-size: v.$font-size-base;
+  line-height: v.$line-height;
+}
+
+.container {
+  max-width: 136.6rem;
+  margin: 0 auto;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: v.$font-weight;
+  text-decoration: none; // Обычно ссылкам также убирают подчеркивание
+  color: inherit; // Ссылка наследует цвет текста родителя
+  white-space: nowrap; // Запрещает перенос слов внутри ссылок 
+}
+
+.main__context {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+}

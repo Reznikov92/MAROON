@@ -1,0 +1,38 @@
+
+.header {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 669px;
+        max-width: 1170px;
+        padding: 39px 0 68px 0;
+    }
+
+    &__info {
+        display: flex;
+        gap: 5.1rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 3.5rem;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 2.8rem;
+
+    }
+
+    &__account {
+        max-width: 16px;
+    }
+
+    &__lock {
+        max-width: 18px;
+    }
+
+}
