@@ -3,6 +3,10 @@
     display: flex;
     justify-content: center;
 
+    &__header-bg-color{
+        background: #F8F8F6
+    }
+    
     &__container {
         display: flex;
         justify-content: space-between;

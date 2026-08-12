@@ -129,6 +129,9 @@ button {
   display: flex;
   justify-content: center;
 }
+.header__header-bg-color {
+  background: #F8F8F6;
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -318,6 +321,35 @@ button {
   height: 12px;
   flex-shrink: 0;
   min-width: 26px;
+}
+
+.promo {
+  background: url(/src/assets/promo/банер-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 140px;
+}
+.promo__context {
+  padding-top: 71px;
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: 280px;
+}
+.promo__title {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.promo__text {
+  font-size: 18px;
+  line-height: 145%;
+  margin-bottom: 33px;
+}
+.promo__button {
+  margin-bottom: 81px;
 }
 
 /*# sourceMappingURL=main.css.map */
