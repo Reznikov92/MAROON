@@ -573,4 +573,56 @@ button {
   right: 98px;
 }
 
+.footer {
+  background-color: #F4F1ED;
+}
+.footer__container {
+  display: flex;
+  gap: 69px;
+  padding: 59px 98px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  /* РАСТЯГИВАЕТ БЛОК НА ВСЮ СВОБОДНУЮ ШИРИНУ */
+}
+.footer__wrapper {
+  display: flex;
+  gap: 40px;
+}
+.footer__social {
+  display: flex;
+  gap: 30px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 98px;
+  color: #959595;
+}
+.footer__rights {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer__logo-link {
+  font-size: 12px;
+  line-height: 100%;
+}
+.footer__copyright {
+  font-size: 12px;
+  line-height: 100%;
+}
+.footer__copyright span {
+  font-size: 18px;
+}
+.footer__policy-link {
+  font-size: 12px;
+  line-height: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */
