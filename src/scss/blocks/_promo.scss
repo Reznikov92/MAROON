@@ -1,0 +1,33 @@
+.promo {
+    background: url(/src/assets/promo/банер-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 140px;
+
+
+    &__context {
+        padding-top: 71px;
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: 280px;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 125%;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 145%;
+        margin-bottom: 33px;
+    }
+
+    &__button {
+        margin-bottom: 81px;
+    }
+}
