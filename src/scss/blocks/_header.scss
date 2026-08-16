@@ -3,12 +3,20 @@
     display: flex;
     justify-content: center;
 
+    &__header-bg-color{
+        background: #F8F8F6
+    }
+    
     &__container {
         display: flex;
         justify-content: space-between;
         gap: 669px;
         max-width: 1170px;
         padding: 39px 0 68px 0;
+    }
+
+    &__inner{
+            padding: 39px 2px 36px 1px;
     }
 
     &__info {
@@ -24,7 +32,6 @@
     &__icons {
         display: flex;
         gap: 2.8rem;
-
     }
 
     &__account {
@@ -34,5 +41,4 @@
     &__lock {
         max-width: 18px;
     }
-
 }

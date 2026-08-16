@@ -1,0 +1,61 @@
+.footer {
+    background-color: #F4F1ED;
+
+    &__container {
+        display: flex;
+        gap: 69px;
+        padding: 59px 98px;
+        border-bottom: 1px solid #D1D1D1;
+
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        /* РАСТЯГИВАЕТ БЛОК НА ВСЮ СВОБОДНУЮ ШИРИНУ */
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px 98px;
+        color: #959595;
+    }
+
+    &__rights {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__logo-link {
+        font-size: 12px;
+        line-height: 100%;
+    }
+
+    &__copyright {
+        font-size: 12px;
+        line-height: 100%;
+        span{
+            font-size: 18px;
+        }
+    }
+
+    &__policy-link {
+        font-size: 12px;
+        line-height: 100%;
+    }
+}
