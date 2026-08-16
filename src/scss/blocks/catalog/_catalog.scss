@@ -1,0 +1,24 @@
+@use '../../mixins' as m;
+
+.catalog {
+    margin-top: 40px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+
+
+    }
+
+    &__button {
+       @include m.button( 3px 41px 11px )
+    }
+}
