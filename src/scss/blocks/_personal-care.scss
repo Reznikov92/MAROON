@@ -1,0 +1,65 @@
+.personal-care {
+
+    margin-bottom: 140px;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__background {
+        display: flex;
+        flex-grow: 0; // Запрещает блоку растягиваться больше 670px
+        flex-shrink: 0; // Запрещает блоку сжиматься меньше 670px
+        flex-basis: 670px; // Задает базовую ширину в 670px
+        background: #F4F1ED;
+        margin-left: 98px;
+        z-index: 1;
+    }
+
+    &__background-oils {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 670px;
+        height: 451px;
+        margin-top: 66px;
+        margin-left: -170px;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &__context {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 342px;
+        padding-top: 92px;
+        padding-bottom: 100px;
+        margin-left: 100px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 22px;
+        font-size: 18px;
+        line-height: 1.45;
+        max-width: 336px;
+        margin-bottom: 38px;
+    }
+}
