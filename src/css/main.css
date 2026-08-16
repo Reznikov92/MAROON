@@ -480,4 +480,39 @@ button {
   line-height: 140%;
 }
 
+.our-story__container {
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+  align-items: flex-start;
+  margin-bottom: 140px;
+  margin-right: -90px;
+}
+.our-story__column-left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.our-story__column-right {
+  margin-right: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 140px;
+}
+.our-story__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  margin-bottom: 13px;
+}
+.our-story__text {
+  font-size: 18px;
+  line-height: 145%;
+  margin-bottom: 33px;
+  letter-spacing: 1px;
+  max-width: 426px;
+}
+
 /*# sourceMappingURL=main.css.map */
