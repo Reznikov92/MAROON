@@ -3,10 +3,12 @@
 
     &__container {
         display: flex;
-        gap: 69px;
-        padding: 59px 98px;
-        border-bottom: 1px solid #D1D1D1;
-
+        gap: 6.9rem;
+        padding: 5.9rem 0 5.7rem 0;
+        border-bottom: 0.1rem solid #D1D1D1;
+        max-width: 130rem;
+        padding-left: 9.8rem;
+        padding-right: 3.2rem;
     }
 
     &__info {
@@ -14,48 +16,46 @@
         justify-content: space-between;
         align-items: center;
         flex-grow: 1;
-        /* РАСТЯГИВАЕТ БЛОК НА ВСЮ СВОБОДНУЮ ШИРИНУ */
     }
 
     &__wrapper {
         display: flex;
-        gap: 40px;
+        gap: 4rem;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
     }
 
     &__social {
         display: flex;
-        gap: 30px;
+        gap: 3rem;
     }
 
     &__bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 19px 98px;
+        padding: 2.1rem 0;
+        max-width: 130rem;
         color: #959595;
-    }
-
-    &__rights {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-
-    &__logo-link {
-        font-size: 12px;
+        font-size: 1.2rem;
         line-height: 100%;
-    }
+        padding-left: 9.9rem;
+        padding-right: 3rem;
 
-    &__copyright {
-        font-size: 12px;
-        line-height: 100%;
-        span{
-            font-size: 18px;
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
         }
     }
 
-    &__policy-link {
-        font-size: 12px;
-        line-height: 100%;
+    &__bottom-span {
+        font-size: 1.8rem;
+        vertical-align: -0.3rem;
+        display: inline-block;
     }
 }

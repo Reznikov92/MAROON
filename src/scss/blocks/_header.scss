@@ -1,22 +1,57 @@
-
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1rem 1.5rem -0.3rem rgba(255, 255, 255, 0.1);
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
 
-    &__header-bg-color{
+    &__header-bg-color {
         background: #F8F8F6
     }
-    
+
     &__container {
         display: flex;
         justify-content: space-between;
-        gap: 669px;
-        max-width: 1170px;
-        padding: 39px 0 68px 0;
+        gap: 66.9rem;
+        max-width: 117rem;
+        padding: 3.9rem 0 6.8rem 0;
     }
 
-    &__inner{
-            padding: 39px 2px 36px 1px;
+    &__button {
+        display: none;
+        width: 2.4rem;
+        height: 1.2rem;
+        position: relative;
+        top: -0.7rem;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 2.4rem;
+            height: 0.2rem;
+            background-color: #122947;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .3s ease;
+            position: absolute;
+        }
+
+        &::before {
+            box-shadow: 0 0.6rem 0 #122947, 0 1.2rem 0 #122947;
+        }
+
+        &-active {
+            &::before {
+                box-shadow: none;
+                transform: translateX(-50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translateX(-50%) rotate(-45deg);
+            }
+        }
     }
 
     &__info {
@@ -24,9 +59,17 @@
         gap: 5.1rem;
     }
 
+    &__social {
+        display: none;
+    }
+
     &__wrapper {
         display: flex;
         gap: 3.5rem;
+    }
+
+    &__social-item {
+        display: none;
     }
 
     &__icons {
@@ -35,10 +78,52 @@
     }
 
     &__account {
-        max-width: 16px;
+        max-width: 1.6rem;
     }
 
     &__lock {
-        max-width: 18px;
+        max-width: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__container {
+            align-items: center;
+            gap: 21.2rem;
+            padding: 4rem 0;
+        }
+
+        &__wrapper {
+            display: none;
+        }
+
+        &__button {
+            display: block;
+        }
+
+        &__social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        &__logo {
+            margin-left: 3.8rem;
+        }
+
+        &__navigation {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4rem;
+            position: absolute;
+            left: 0;
+            top: 10rem;
+            background-color: #F8F8F6;
+            width: 100vw;
+            padding: 5rem 0 6rem 4.5rem;
+            border-top: 0.1rem solid #DBDCE0;
+        }
     }
 }

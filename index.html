@@ -13,21 +13,30 @@
   <div class="wrapper-bg">
     <header class="header">
       <div class="header__container">
+        <button class="header__button"></button>
         <div class="header__logo">
           <a href="index.html"><img src="./src/assets/icons/MAROON.svg" alt="MAROON"></a>
         </div>
 
         <div class="header__info">
-          <nav class="header__wrapper">
+
+          <nav class="header__wrapper header__navigation">
             <a href="catalog.html">Каталог</a>
             <a href="#">О нас</a>
             <a href="#">Контакты</a>
+
+            <div class="header__social-item">
+              <a href="https://www.facebook.com/"><img src="./src/assets/icons/facebook.svg" alt="facebook"></a>
+              <a href="https://www.instagram.com/"><img src="./src/assets/icons/instagram.svg" alt="instagram"></a>
+              <a href="https://x.com/"><img src="./src/assets/icons/twitter.svg" alt="twitter"></a>
+            </div>
           </nav>
 
           <div class="header__icons">
             <img class="header__account" src="./src/assets/icons/account.svg" alt="account">
             <img class="header__lock" src="./src/assets/icons/lock.svg" alt="lock">
           </div>
+
         </div>
       </div>
     </header>
@@ -249,7 +258,9 @@
       </div>
 
       <div class="contacts__map">
-        <img src="./src/assets/contacts/map.jpg" alt="map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
+          frameborder="0" allowfullscreen="true"></iframe>
       </div>
 
     </div>
@@ -282,12 +293,15 @@
     <div class="footer__bottom">
       <div class="footer__rights">
         <a href="#" class="footer__logo-link">Maroon</a>
-        <span class="footer__copyright"><span>&copy;</span> 2020 Все права защищены</span>
+        <span class="footer__copyright"><span class="footer__bottom-span">&copy;</span> 2020 Все права защищены</span>
       </div>
 
       <a href="#" class="footer__policy-link" target="_blank">Политика конфиденциальности</a>
     </div>
   </div>
   <!--//////////////////_footer -->
+
+  <script type="module" src="/src/main.ts"></script>
 </body>
+
 </html>

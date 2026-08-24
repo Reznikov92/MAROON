@@ -7,54 +7,50 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-bottom: 140px;
-        margin-right: -41px;
+        margin-bottom: 14rem;
+        margin-right: -4.1rem;
     }
 
     &__container {
         display: flex;
-        margin-bottom: 25px;
-        gap: 81px;
-        margin-left: 98px;
+        margin-bottom: 2.5rem;
+        gap: 8.1rem;
+        margin-left: 9.8rem;
     }
 
     &__info {
-        width: 219px;
+        width: 21.9rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 43px;
+        padding-top: 4.3rem;
     }
 
     &__title {
         font-family: 'Raleway';
         font-weight: 500;
-        font-size: 32px;
-        margin-bottom: 13px;
+        font-size: 3.2rem;
+        margin-bottom: 1.3rem;
     }
 
     &__text {
-        max-width: 264px;
-        font-size: 18px;
+        max-width: 26.4rem;
+        font-size: 1.8rem;
         line-height: 145%;
-        margin-bottom: 33px;
+        margin-bottom: 3.3rem;
     }
 
     &__button {
-        @include m.button(6px 23px 10px 23px)
+        @include m.button(0.6rem 2.3rem 1rem 2.3rem)
     }
 
     &__cards {
         display: flex;
-        gap: 30px;
-
-        li {
-            width: 230px;
-        }
+        gap: 3rem;
     }
 
     &__card {
-        width: 230px;
+        width: 23rem;
         position: relative;
     }
 
@@ -62,63 +58,85 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 128px;
+        max-width: 12.8rem;
         position: absolute;
         z-index: 2;
         bottom: 0;
-        right: 67px;
+        right: 6.7rem;
         text-align: center;
-        margin-bottom: 26px;
+        margin-bottom: 2.6rem;
     }
 
     &__card-content-wrapper {
-        right: 51px;
+        right: 5.1rem;
     }
 
     &__card-title {
         font-family: 'Raleway';
-        font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 145%;
-        display: flex;
-        align-items: center;
     }
 
     &__card-text {
-        margin-bottom: 10px;
-        font-size: 13px;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
         line-height: 145%;
-        display: flex;
-        align-items: center;
         color: #9A9DA0;
     }
 
     &__card-button {
-        font-size: 13px;
+        font-size: 1.3rem;
         line-height: 145%;
         color: #122947;
-        border-bottom: 1px solid #122947;
+        border-bottom: 0.1rem solid #122947;
     }
 
     &__hands {
-        max-width: 26px;
+        max-width: 2.6rem;
         display: flex;
-        gap: 32px;
-        margin-right: 198px;
+        gap: 3.2rem;
+        margin-right: 19.8rem;
     }
 
+    &__img-right,
     &__img-left {
-        width: 26px;
-        height: 12px;
+        width: 2.6rem;
+        height: 1.2rem;
         flex-shrink: 0; // Запрещает сжатие элемента 
-        min-width: 26px; // Гарантирует минимальную ширину 
+        min-width: 2.6rem; // Гарантирует минимальную ширину 
     }
+}
 
-    &__img-right {
-        width: 26px;
-        height: 12px;
-        flex-shrink: 0; // Запрещает сжатие элемента 
-        min-width: 26px; // Гарантирует минимальную ширину 
+@media (max-width:768px) {
+    .bestsellers {
+        overflow: hidden;
+
+        &__container-hands {
+            transform: translateX(54.6rem);
+            margin-bottom: 12rem;
+        }
+
+        &__container {
+            gap: 3.4rem;
+        }
+
+        &__cards {
+            gap: 4.6rem;
+            overflow-x: auto;
+        }
+
+        &__card {
+            flex-shrink: 0;
+        }
+
+        &__card-content-wrapper {
+            right: 6.6rem;
+        }
+
+        &__hands {
+            align-self: flex-start;
+            margin-left: 93px;
+        }
     }
 }

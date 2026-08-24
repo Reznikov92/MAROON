@@ -1,43 +1,40 @@
 .our-story {
-margin-bottom: 138px;
+    margin-bottom: 14rem;
+
     &__container {
         display: flex;
         justify-content: center;
-        gap: 27px;
-        align-items: flex-start;
-        
-        margin-right: -90px;
-
+        gap: 7.1rem;
+        max-width: 130rem;
+        transform: translateX(2.8rem); 
     }
 
     &__column-left {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
     }
 
     &__column-right {
-        margin-right: 108px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 140px;
+        padding-top: 13.8rem;
     }
 
     &__title {
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
-        font-size: 32px;
+        font-size: 3.2rem;
         line-height: 130%;
-        margin-bottom: 13px;
+        margin-bottom: 1.3rem;
     }
 
     &__text {
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 145%;
-        margin-bottom: 33px;
-        letter-spacing: 1px;
-           max-width: 426px;
+        margin-bottom: 3.5rem;
+        max-width: 38.8rem;
+    }
+
+    &__button {
+        padding: 0.6rem 3.3rem 1rem 3.2rem;
     }
 
 }
