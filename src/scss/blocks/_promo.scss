@@ -1,0 +1,56 @@
+.promo {
+    background: url(/src/assets/promo/банер-1.jpg) center / cover no-repeat;
+    margin-bottom: 14rem;
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__context {
+        padding-top: 7.1rem;
+        max-width: 29rem;
+        margin-right: 27.9rem;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 125%;
+        margin-bottom: 1.6rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 145%;
+        margin-bottom: 3.3rem;
+    }
+
+    &__button {
+        margin-bottom: 8.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        background-position: 60%;
+        height: 432px;
+
+        &__container {
+            justify-content: flex-end;
+            transform: translateX(-98px);
+        }
+
+        &__context {
+            margin-right: -18px;
+            padding: 4rem 0rem;
+            width: 342px;
+            padding-top: 87px;
+        }
+
+        &__button {
+            margin-bottom: 0;
+        }
+    }
+}

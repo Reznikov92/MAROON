@@ -1,9 +1,12 @@
-
-.wrapper-bg{
+.wrapper-bg {
     background: url(/src/assets/main/main_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-     /* 3. Центрируем картинку по горизонтали и вертикали */
+    /* 3. Центрируем картинку по горизонтали и вертикали */
     background-position: center center;
     margin-bottom: 136px;
+
+    @media (max-width:768px) {
+        margin-bottom: 126px;
+    }
 }

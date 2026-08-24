@@ -1,4 +1,3 @@
-
 .main {
     background: url(/src/assets/main/main_bg.jpg);
 
@@ -10,7 +9,7 @@
     }
 
     &__image-main {
-        margin-bottom: 9px;
+        margin-bottom: 0.9rem;
     }
 
     &__content {
@@ -18,28 +17,24 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding-top: 46px;
+        padding-top: 4.6rem;
     }
 
     &__title {
         font-family: 'Raleway';
         font-weight: 500;
         font-size: 5.8rem;
-        line-height: 68px;
+        line-height: 6.8rem;
         margin-bottom: 1.1rem;
     }
 
     &__text {
-        text-align: center;
         max-width: 27.4rem;
         font-size: 1.8rem;
         margin-bottom: 3.4rem;
         font-weight: 400;
         line-height: 145%;
-        display: flex;
-        align-items: center;
         letter-spacing: -1%;
-
     }
 
     &__skincare {
@@ -48,4 +43,45 @@
         margin-bottom: 7rem;
     }
 
+}
+
+@media (max-width:768px) {
+
+    .main {
+        margin-top: 2rem;
+
+        &__container {
+            gap: 18.8rem;
+            padding: 0 16.8rem;
+            position: relative;
+        }
+
+        &__content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -89%);
+            z-index: 3;
+            width: 100%;
+            max-width: 28rem;
+            padding-top: 0;
+        }
+
+        &__title {
+            font-size: 5.4rem;
+            line-height: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        &__image-main {
+            max-width: 24.5rem;
+            height: auto;
+            margin-bottom: 1.8rem;
+        }
+
+        &__column-left,
+        &__column-right {
+            transform: translateY(1rem);
+        }
+    }
 }
