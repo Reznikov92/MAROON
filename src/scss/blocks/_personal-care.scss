@@ -58,3 +58,26 @@
         }
     }
 }
+
+
+
+@media (max-width: 768px) {
+    .personal-care {
+    //     position: relative;
+    // &__container{
+    // }
+
+    &__background{
+        transform: translate(-14%,-11%);
+  
+    }
+
+    &__background-oils{
+       transform: translate(-14%,-11%);
+      max-width: 398px;
+      height: 403px;
+    }
+
+    
+    }
+}

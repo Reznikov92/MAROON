@@ -34,6 +34,9 @@
 
 @media (max-width: 768px) {
     .promo {
+        background-position: 60%;
+        height: 432px;
+
         &__container {
             justify-content: flex-end;
             transform: translateX(-98px);

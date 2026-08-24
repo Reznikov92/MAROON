@@ -131,13 +131,11 @@ button {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 1rem 1.5rem -0.3rem rgba(255, 255, 255, 0.1);
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
+  z-index: 1000;
+  position: relative;
 }
 .header__header-bg-color {
   background: #F8F8F6;
@@ -223,6 +221,7 @@ button {
     margin-left: 3.8rem;
   }
   .header__navigation {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 4rem;
@@ -477,6 +476,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .promo {
+    background-position: 60%;
+    height: 432px;
+  }
   .promo__container {
     justify-content: flex-end;
     transform: translateX(-98px);
@@ -544,6 +547,16 @@ button {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+  .personal-care__background {
+    transform: translate(-14%, -11%);
+  }
+  .personal-care__background-oils {
+    transform: translate(-14%, -11%);
+    max-width: 398px;
+    height: 403px;
+  }
+}
 .philosophy {
   background: url("/src/assets/philosophy/philosophy.jpg") center/cover no-repeat;
   margin-bottom: 14rem;
