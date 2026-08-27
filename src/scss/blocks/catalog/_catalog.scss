@@ -1,7 +1,8 @@
 @use '../../mixins' as m;
 
 .catalog {
-    margin-top: 40px;
+    margin-top: 7px;
+    margin-bottom: 49px;
 
     &__container {
         display: flex;
@@ -19,6 +20,6 @@
     }
 
     &__button {
-       @include m.button( 3px 41px 11px )
+        @include m.button(5px 41px 11px)
     }
 }

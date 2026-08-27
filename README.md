@@ -24,7 +24,7 @@ git remote add origin https://github.com/Reznikov92/MAROON.git
 git branch -M main
 git push -u origin main
 
-git checkout -b fiature/promo 
+git checkout -b feature/promo 
 
 Как JavaScript может улучшить ваш сайт MAROON
 1.Слайдер/карусель для блока "Бестселлеры" (сейчас там просто стрелки, которые ничего не делают).
