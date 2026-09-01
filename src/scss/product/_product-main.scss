@@ -1,0 +1,119 @@
+@use '../mixins' as m;
+
+.product-main {
+    margin: 40px 98px 132px;
+
+    &__container {
+        display: flex;
+        gap: 70px;
+    }
+
+    &__content {
+        margin: 42px 0;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 125%;
+        margin-bottom: 0;
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 145%;
+        color: #9A9DA0;
+        margin-bottom: 34px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 283px;
+        margin-bottom: 39px;
+
+        p {
+            font-size: 16px;
+            line-height: 145%;
+        }
+    }
+
+    &__border {
+        border: 1px solid #B3BAC1;
+        width: 370px;
+    }
+
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 12px 0;
+        margin-right: 15px;
+        position: relative;
+
+        p {
+            font-size: 14px;
+            line-height: 145%;
+            position: absolute;
+            left: 0;
+            top: 34px;
+            width: 380px;
+        }
+
+
+        h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 145%;
+        }
+
+        &.active {
+            height: 137px;
+            margin: 7px 0;
+            top: 4px;
+
+            &:nth-child(2) {
+                top: 16px;
+            }
+        }
+
+
+    }
+
+    &__item {
+        display: flex;
+        gap: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 145%;
+        margin: 40px 0;
+    }
+
+    &__label {
+        display: flex;
+        gap: 11px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 145%;
+        margin-top: -3px;
+    }
+
+    &__button {
+        width: 214px;
+        height: 41px;
+        font-weight: 500;
+        font-size: 16px;
+        border: 1px solid #B3BAC1;
+
+    }
+
+}

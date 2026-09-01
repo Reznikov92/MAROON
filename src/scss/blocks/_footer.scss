@@ -2,13 +2,16 @@
     background-color: #F4F1ED;
 
     &__container {
+        align-items: center;
+        height: 140px;
+        margin-left: 97px;
         display: flex;
         gap: 6.9rem;
-        padding: 5.9rem 0 5.7rem 0;
+        // padding: 5.9rem 0 5.7rem 0;
         border-bottom: 0.1rem solid #D1D1D1;
         max-width: 130rem;
-        padding-left: 9.8rem;
-        padding-right: 3.2rem;
+        margin-right: 98px;
+        // padding-right: 3.2rem;
     }
 
     &__info {

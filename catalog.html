@@ -10,7 +10,7 @@
 
 <body>
   <!-- header -->
-  <header class="header">
+  <header class="header header-container">
     <div class="header__container header__inner">
       <div class="header__logo">
         <a href="index.html"><img src="./src/assets/icons/MAROON.svg" alt="MAROON"></a>
@@ -30,239 +30,127 @@
       </div>
     </div>
   </header>
-  <hr>
   <!--////////////// header -->
 
   <!-- catalog -->
   <section class="catalog container-catalog">
     <div class="catalog__container ">
       <h1 class="catalog__title">Каталог</h1>
-      <button class="catalog__button">Фильтр</button>
+      <button class="catalog__button active">Фильтр</button>
+      <button class="catalog__close active"></button>
     </div>
   </section>
   <!--///////////// catalog -->
 
+  <!-- filter -->
+  <section class="filter">
+    <div class="filter__container">
+      <!-- filter-left -->
+      <div class="filter__left">
+        <h3 class="filter__title">Уход для лица</h3>
+
+        <label class="filter__label active">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Крема</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Сыворотки</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input" checked>
+          <span class="filter__text">Маски</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Пенки</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Тоники</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Пудры</span>
+        </label>
+      </div>
+      <!-- filter-center -->
+      <div class="filter__center">
+        <h3 class="filter__title">Уход для тела</h3>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Крема</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Масла</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Скрабы</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Мыло</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Бомбочки для ванны</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Соль для ванны</span>
+        </label>
+      </div>
+      <!-- filter-right -->
+      <div class="filter__right">
+        <h3 class="filter__title">Тип кожи</h3>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Нормальная</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Сухая</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Жирная</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Комбинированная </span>
+        </label>
+
+        <div class="filter__actions">
+          <button class="filter__button">Применить</button>
+          <button class="filter__button">Сбросить</button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!--///////////// filter -->
+
   <!-- catalog-cards -->
   <section class="catalog-cards container-catalog">
-    <div class="catalog-cards__container">
-
-      <!-- 1. High -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/High.png" alt="High">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">High</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">990 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">крем для лица</p>
-            <span class="catalog-cards__weight">50ml</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2. Rest -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Rest.png" alt="Rest">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Rest</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">690 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">минеральная пудра</p>
-            <span class="catalog-cards__weight">20g</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. Rose -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Rose.png" alt="Rose">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Rose</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">890 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">крем для лица</p>
-            <span class="catalog-cards__weight">50ml</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. Milk -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Milk.png" alt="Milk">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Milk</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">790 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">масло для тела</p>
-            <span class="catalog-cards__weight">150ml</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5. Paradise -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Paradise.png" alt="Paradise">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Paradise</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">590 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">минеральная пудра</p>
-            <span class="catalog-cards__weight">15g</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6. Sun -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Sun.png" alt="Sun">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Sun</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">90 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">бомбочка для ванны</p>
-            <span class="catalog-cards__weight">20g</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 7. Violet -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Violet.png" alt="Violet">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Violet</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">890 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">крем для лица</p>
-            <span class="catalog-cards__weight">50ml</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 8. Clean -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Clean.png" alt="Clean">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Clean</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">490 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">маска для лица</p>
-            <span class="catalog-cards__weight">100g</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 9. Coconut -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Coconut.png" alt="Coconut">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Coconut</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">990 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">масло для тела</p>
-            <span class="catalog-cards__weight">300ml</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 10. Lavender -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Lavender.png" alt="Lavender">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Lavender</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">290 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">мыло ручной работы</p>
-            <span class="catalog-cards__weight">50g</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 11. Lotos -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Lotos.png" alt="Lotos">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Lotos</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">890 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">маска для лица</p>
-            <span class="catalog-cards__weight">50ml</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 12. Earth -->
-      <div class="catalog-cards__item">
-        <img src="./src/assets/catalog/catalog-cards/Earth.png" alt="Earth">
-        <div class="catalog-cards__context">
-          <div class="catalog-cards__first-line">
-            <h4 class="catalog-cards__title">Earth</h4>
-            <div class="catalog-cards__price-title">
-              <span class="catalog-cards__price">90 </span>
-              <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
-            </div>
-          </div>
-          <div class="catalog-cards__second-line">
-            <p class="catalog-cards__descr">бомбочка для ванны</p>
-            <span class="catalog-cards__weight">20g</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <div class="catalog-cards__container"></div>
   </section>
   <!--///////////// catalog-cards -->
 
@@ -487,6 +375,7 @@
     </div>
   </div>
   <!--//////////////////_footer -->
+  <script type="module" src="./src/main.ts"></script>
 </body>
 
 </html>

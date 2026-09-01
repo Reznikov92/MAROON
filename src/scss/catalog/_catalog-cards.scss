@@ -1,5 +1,4 @@
 .catalog-cards {
-
     margin-bottom: 4.4rem;
 
     &__container {
@@ -35,6 +34,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        margin-top: -2px;
     }
 
     &__title {
@@ -50,8 +50,8 @@
         align-items: center;
 
         img {
-            height: 0.9rem;
-            width: auto;
+            height: 0.9rem; // подберите размер под шрифт (обычно 1em или чуть больше)
+            width: auto; // сохраняет пропорции
         }
     }
 

@@ -8,11 +8,14 @@
 @use './blocks/promo';
 @use './blocks/personal-care';
 @use './blocks/philosophy';
-@use './blocks/catalog/catalog';
 @use './blocks/our-story';
 @use './blocks/contacts';
 @use './blocks/footer';
-@use './blocks/catalog/catalog-cards';
 @use './blocks/catalog/catalog-bottom';
 @use './blocks/catalog/viewed';
+@use './catalog/filter';
+@use './product/product-main';
+@use './product/might-like';
+@use './catalog/catalog';
+@use './catalog/catalog-cards';
 
