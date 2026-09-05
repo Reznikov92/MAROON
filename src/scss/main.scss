@@ -11,11 +11,11 @@
 @use './blocks/our-story';
 @use './blocks/contacts';
 @use './blocks/footer';
-@use './blocks/catalog/catalog-bottom';
-@use './blocks/catalog/viewed';
+@use './catalog/viewed';
 @use './catalog/filter';
 @use './product/product-main';
 @use './product/might-like';
 @use './catalog/catalog';
 @use './catalog/catalog-cards';
+@use './catalog/catalog-bottom';
 

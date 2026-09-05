@@ -53,7 +53,7 @@ const cardsInfo = [{
     price: 890,
     category: 'крем для лица',
     volume: '50ml',
-    image: "Lotos",
+    image: "Violet",
 },
 {
     title: 'Clean',
@@ -110,5 +110,10 @@ cards.innerHTML = cardsInfo.map((card) => `
       </div>
 `).join('')
 
-
+const plus = document.querySelectorAll('.plus')
+plus.forEach(item => {
+    item.addEventListener('click', () => {
+        item.closest('.product-main__text')?.classList.toggle('active')
+    })
+})
 

@@ -2,19 +2,14 @@
     font-size: 1.6rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 1000;
     position: relative;
-    height: 102px;
-    margin-bottom: 30px;
+    height: 10.2rem;
+    margin-bottom: 3rem;
 
     &__header-bg-color {
         background: #F8F8F6
-    }
-
-    &-container {
-        height: 100px;
-        border-bottom: 1px solid #DBDCE0;
-        margin-bottom: 38px;
     }
 
     &__container {
@@ -23,6 +18,11 @@
         align-items: center;
         gap: 66.9rem;
         max-width: 117rem;
+    }
+
+    &-container {
+        border-bottom: 1px solid #DBDCE0;
+        margin-bottom: 36px;
     }
 
     &__button {
@@ -94,6 +94,8 @@
 
 @media (max-width: 768px) {
     .header {
+        margin-bottom: -0.1rem;
+
         &__container {
             align-items: center;
             gap: 21.2rem;
@@ -117,6 +119,60 @@
 
         &__logo {
             margin-left: 3.8rem;
+        }
+
+        &__navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4rem;
+            position: absolute;
+            left: 0;
+            top: 10rem;
+            background-color: #F8F8F6;
+            width: 100vw;
+            padding: 5rem 0 6rem 4.5rem;
+            border-top: 0.1rem solid #DBDCE0;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        height: 76px;
+        &__container {
+            max-width: 29rem;
+            gap: 43px;
+            // padding: 4rem 0;
+        }
+
+        &__logo {
+            width: 85px;
+            height: 13px;
+        }
+
+        &__button {
+
+
+            &::before,
+            &::after {
+
+                width: 22px;
+
+            }
+        }
+
+        &__info {
+            gap: 1px;
+
+            img {
+                width: 14px;
+                height: 16px;
+
+                &:first-child{
+                    margin-left: 3px;
+                }
+            }
         }
 
         &__navigation {

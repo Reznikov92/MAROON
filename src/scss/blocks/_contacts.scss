@@ -1,5 +1,5 @@
 .contacts {
-    margin-bottom: 14rem;
+    margin-bottom: 13.9rem;
 
     &__container {
         display: flex;
@@ -23,7 +23,7 @@
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
         font-size: 3.2rem;
-        line-height: 130%;
+        line-height: 136%;
         margin-bottom: 2.4rem;
     }
 
@@ -73,6 +73,50 @@
             width: 100%;
             height: 100%;
             display: block;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contacts {
+
+        &__background {
+            margin-left: -5.1rem;
+            margin-top: 6rem;
+            width: 678px;
+            height: 474px;
+        }
+
+        &__content {
+            padding: 4.9rem 0 6rem 5.7rem;
+        }
+
+        &__map {
+            position: absolute;
+            z-index: 2;
+            top: 10.9rem;
+            right: 0rem;
+            width: 36.9rem;
+            height: 37.4rem;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .contacts {
+
+        &__container{
+            flex-direction: column;
+        }
+        &__background {
+          
+        }
+
+        &__content {
+        }
+
+        &__map {
+            
         }
     }
 }

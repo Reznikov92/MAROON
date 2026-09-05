@@ -16,12 +16,8 @@
         flex-direction: column;
         justify-content: flex-end;
         padding: 1.4rem 2rem;
-
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        inset: 0;
     }
 
     &__first-line {
@@ -74,5 +70,33 @@
         font-size: 1.3rem;
         line-height: 145%;
         color: #9A9DA0;
+    }
+}
+
+@media (max-width:768px) {
+    .catalog-cards {
+        margin-top: 5px;
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+                gap: 33px;
+                row-gap: 30px;
+        }
+
+        &__context {
+
+max-width: 328px;
+
+        }
+
+        &__item {
+            max-width: 324px;
+
+            img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+
     }
 }

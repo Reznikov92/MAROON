@@ -104,7 +104,7 @@
         width: 2.6rem;
         height: 1.2rem;
         flex-shrink: 0; // Запрещает сжатие элемента 
-        min-width: 2.6rem; // Гарантирует минимальную ширину 
+        min-width: 2.6rem;
     }
 }
 
@@ -115,6 +115,7 @@
         &__container-hands {
             transform: translateX(54.6rem);
             margin-bottom: 12rem;
+            margin-right: 480px;
         }
 
         &__container {
@@ -122,21 +123,35 @@
         }
 
         &__cards {
-            gap: 4.6rem;
             overflow-x: auto;
+            margin-right: 4.7rem;
         }
 
         &__card {
             flex-shrink: 0;
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                display: none;
+            }
         }
 
         &__card-content-wrapper {
-            right: 6.6rem;
+            right: 5.1rem;
         }
 
         &__hands {
             align-self: flex-start;
-            margin-left: 93px;
+            margin-left: 9.3rem;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .bestsellers {
+
+        &__container {
+            flex-direction: column;
         }
     }
 }

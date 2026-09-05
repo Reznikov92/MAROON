@@ -3,15 +3,12 @@
 
     &__container {
         align-items: center;
-        height: 140px;
-        margin-left: 97px;
+        height: 13.9rem;
+        margin-left: 9.7rem;
         display: flex;
         gap: 6.9rem;
-        // padding: 5.9rem 0 5.7rem 0;
-        border-bottom: 0.1rem solid #D1D1D1;
         max-width: 130rem;
-        margin-right: 98px;
-        // padding-right: 3.2rem;
+        margin-right: 9.8rem;
     }
 
     &__info {
@@ -41,13 +38,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2.1rem 0;
-        max-width: 130rem;
         color: #959595;
         font-size: 1.2rem;
         line-height: 100%;
-        padding-left: 9.9rem;
-        padding-right: 3rem;
+
+        border-top: 0.1rem solid #D1D1D1;
+        padding: 2.1rem 9.6rem 0 9.8rem;
 
         a {
             color: inherit;
@@ -60,5 +56,43 @@
         font-size: 1.8rem;
         vertical-align: -0.3rem;
         display: inline-block;
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        margin-top: -20px;
+
+        &__container {
+            margin-left: 3.5rem;
+            width: 100%;
+            gap: 0;
+        }
+
+        &__info {
+            font-size: 1.6rem;
+            padding-left: 3.9rem;
+
+        }
+
+        &__wrapper {
+            gap: 2.5rem;
+        }
+
+        &__logo {
+            padding: 1rem;
+        }
+
+        &__social {
+            padding-right: 7.9rem;
+            display: flex;
+            gap: 2.6rem;
+        }
+
+        &__bottom {
+                  padding: 2.3rem 4.4rem;
+
+
+        }
     }
 }

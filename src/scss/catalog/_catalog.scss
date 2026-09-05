@@ -55,3 +55,15 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .catalog {
+        margin-top: 3.8rem;
+        margin-bottom: 3.6rem;
+
+        &__container {
+            max-width: 678px;
+            margin: 0 auto;
+        }
+    }
+}
