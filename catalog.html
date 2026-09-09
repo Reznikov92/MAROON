@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <title>Catalog</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header header-container">
+    <div class="header__container header__inner">
+      <button class="header__button"></button>
+      <div class="header__logo">
+        <a href="index.html"><img src="./src/assets/icons/MAROON.svg" alt="MAROON"></a>
+      </div>
+
+      <div class="header__info">
+        <nav class="header__wrapper">
+          <a href="#">Каталог</a>
+          <a href="#">О нас</a>
+          <a href="#">Контакты</a>
+        </nav>
+
+        <div class="header__icons">
+          <img class="header__account" src="./src/assets/icons/account.svg" alt="account">
+          <img class="header__lock" src="./src/assets/icons/lock.svg" alt="lock">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--////////////// header -->
+
+  <!-- catalog -->
+  <section class="catalog container-catalog">
+    <div class="catalog__container ">
+      <h1 class="catalog__title">Каталог</h1>
+      <button class="catalog__button active">Фильтр</button>
+      <button class="catalog__close active"></button>
+    </div>
+  </section>
+  <!--///////////// catalog -->
+
+  <!-- filter -->
+  <section class="filter">
+    <div class="filter__container">
+      <!-- filter-left -->
+      <div class="filter__left">
+        <h3 class="filter__title">Уход для лица</h3>
+
+        <label class="filter__label active">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Крема</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Сыворотки</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input" checked>
+          <span class="filter__text">Маски</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Пенки</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Тоники</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Пудры</span>
+        </label>
+      </div>
+      <!-- filter-center -->
+      <div class="filter__center">
+        <h3 class="filter__title">Уход для тела</h3>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Крема</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Масла</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Скрабы</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Мыло</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Бомбочки для ванны</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Соль для ванны</span>
+        </label>
+      </div>
+      <!-- filter-right -->
+      <div class="filter__right">
+        <h3 class="filter__title">Тип кожи</h3>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Нормальная</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Сухая</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Жирная</span>
+        </label>
+
+        <label class="filter__label">
+          <input type="checkbox" name="category" value="face" class="filter__input">
+          <span class="filter__text">Комбинированная </span>
+        </label>
+
+        <div class="filter__actions">
+          <button class="filter__button">Применить</button>
+          <button class="filter__button">Сбросить</button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!--///////////// filter -->
+
+  <!-- catalog-cards -->
+  <section class="catalog-cards container-catalog">
+    <div class="catalog-cards__container container"></div>
+  </section>
+  <!--///////////// catalog-cards -->
+
+  <!-- catalog-bottom -->
+  <div class="catalog-bottom">
+    <div class="catalog-bottom__container">
+      <div class="catalog-bottom__pagination">
+        <button class="catalog-bottom__pagination-one">1</button>
+        <hr class="catalog-bottom__hr">
+        <button class="catalog-bottom__pagination-eight">8</button>
+      </div>
+
+      <div class="catalog-bottom__nav">
+        <button><img class="bestsellers__img-left" src="/src/assets/icons/left.svg" alt="left"></button>
+        <button><img class="bestsellers__img-right" src="/src/assets/icons/right.svg" alt="right"></button>
+      </div>
+    </div>
+  </div>
+  <!--///////////// catalog-bottom -->
+
+  <!-- viewed -->
+  <div class="viewed">
+    <div class="viewed__container">
+      <h2 class="viewed__title">Вы недавно смотрели</h2>
+      <div class="viewed__cards">
+
+        <!-- Clean -->
+        <div class="catalog-cards__item">
+          <img src="./src/assets/catalog/catalog-cards/Clean.png" alt="Clean">
+          <div class="catalog-cards__context">
+            <div class="catalog-cards__first-line">
+              <h4 class="catalog-cards__title">Clean</h4>
+              <div class="catalog-cards__price-title">
+                <span class="catalog-cards__price">490 </span>
+                <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
+              </div>
+            </div>
+            <div class="catalog-cards__second-line">
+              <p class="catalog-cards__descr">маска для лица</p>
+              <span class="catalog-cards__weight">100g</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lotos -->
+        <div class="catalog-cards__item">
+          <img src="./src/assets/catalog/catalog-cards/Lotos.png" alt="Lotos">
+          <div class="catalog-cards__context">
+            <div class="catalog-cards__first-line">
+              <h4 class="catalog-cards__title">Lotos</h4>
+              <div class="catalog-cards__price-title">
+                <span class="catalog-cards__price">890 </span>
+                <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
+              </div>
+            </div>
+            <div class="catalog-cards__second-line">
+              <p class="catalog-cards__descr">маска для лица</p>
+              <span class="catalog-cards__weight">50ml</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lavender -->
+        <div class="catalog-cards__item">
+          <img src="./src/assets/catalog/catalog-cards/Lavender.png" alt="Lavender">
+          <div class="catalog-cards__context">
+            <div class="catalog-cards__first-line">
+              <h4 class="catalog-cards__title">Lavender</h4>
+              <div class="catalog-cards__price-title">
+                <span class="catalog-cards__price">290 </span>
+                <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
+              </div>
+            </div>
+            <div class="catalog-cards__second-line">
+              <p class="catalog-cards__descr">мыло ручной работы</p>
+              <span class="catalog-cards__weight">50g</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coconut -->
+        <div class="catalog-cards__item">
+          <img src="./src/assets/catalog/catalog-cards/Coconut.png" alt="Coconut">
+          <div class="catalog-cards__context">
+            <div class="catalog-cards__first-line">
+              <h4 class="catalog-cards__title">Coconut</h4>
+              <div class="catalog-cards__price-title">
+                <span class="catalog-cards__price">990 </span>
+                <img src="./src/assets/catalog/catalog-cards/₽.png" alt="₽">
+              </div>
+            </div>
+            <div class="catalog-cards__second-line">
+              <p class="catalog-cards__descr">масло для тела</p>
+              <span class="catalog-cards__weight">300ml</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--///////////// viewed -->
+
+  <!-- catalog-bottom -->
+  <div class="catalog-bottom">
+    <div class="catalog-bottom__container">
+      <div class="catalog-bottom__pagination">
+        <button class="catalog-bottom__pagination-one">1</button>
+        <hr class="catalog-bottom__hr">
+        <button class="catalog-bottom__pagination-eight">3</button>
+      </div>
+
+      <div class="catalog-bottom__nav">
+        <button><img class="bestsellers__img-left" src="/src/assets/icons/left.svg" alt="left"></button>
+        <button><img class="bestsellers__img-right" src="/src/assets/icons/right.svg" alt="right"></button>
+      </div>
+    </div>
+  </div>
+  <!--///////////// catalog-bottom -->
+
+  <!-- our-story -->
+  <section class="our-story">
+    <div class="our-story__container">
+      <div class="our-story__column-left">
+        <div>
+          <img src="./src/assets/our-story/face-cream.png" alt="face-cream">
+        </div>
+        <div>
+          <img src="./src/assets/our-story/pills.png" alt="pills">
+        </div>
+        <div>
+          <img src="./src/assets/our-story/care.png" alt="care">
+        </div>
+        <div>
+          <img src="./src/assets/our-story/collection.png" alt="collection">
+        </div>
+        <div>
+          <img src="./src/assets/our-story/body-cream.png" alt="body-cream">
+        </div>
+        <div>
+          <img src="./src/assets/our-story/perfume.png" alt="perfume">
+        </div>
+      </div>
+
+      <div class="our-story__column-right">
+        <h1 class="our-story__title">Присоединяйтесь к нам</h1>
+        <p class="our-story__text">
+          Подпишитесь на наш аккаунт @marooncare
+          и узнавайте о новиках и акциях первыми
+        </p>
+        <button class="our-story__button button">Подписаться</button>
+      </div>
+
+    </div>
+  </section>
+  <!--///////////// our-story -->
+
+  <!-- _contacts -->
+  <section class="contacts">
+    <div class="contacts__container">
+      <div class="contacts__background">
+        <div class="contacts__content">
+          <h2 class="contacts__title">Контакты</h2>
+
+          <div class="contacts__item">
+            <h3 class="contacts__label">Адрес</h3>
+            <p class="contacts__text">
+              Санкт-Петербург,<br>
+              ул. Большая Конюшенная, 19</p>
+          </div>
+
+          <div class="contacts__item">
+            <h3 class="contacts__label">Телефон</h3>
+            <p class="contacts__text">
+              <a href="tel:+79238889060">+7 (923) 888-90-60</a>
+            </p>
+          </div>
+
+          <div class="contacts__item">
+            <h3 class="contacts__label">E-mail</h3>
+            <p class="contacts__text">
+              <a href="mailto:info@maroon.ru">info@maroon.ru</a>
+            </p>
+          </div>
+
+          <div class="contacts__social">
+            <a href="https://www.facebook.com/"><img src="./src/assets/icons/facebook.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="./src/assets/icons/instagram.svg" alt="instagram"></a>
+            <a href="https://x.com/"><img src="./src/assets/icons/twitter.svg" alt="twitter"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
+          frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+
+    </div>
+  </section>
+  <!--///////////// _contacts -->
+
+  <!-- _footer -->
+  <div class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <img src="./src/assets/icons/MAROON.svg" alt="MAROON">
+      </div>
+
+      <div class="footer__info">
+        <nav class="footer__wrapper">
+          <a href="#">Каталог</a>
+          <a href="#">О нас</a>
+          <a href="#">Магазины</a>
+          <a href="#">Контакты</a>
+        </nav>
+
+        <div class="footer__social">
+          <img src="./src/assets/icons/facebook.svg" alt="facebook">
+          <img src="./src/assets/icons/instagram.svg" alt="instagram">
+          <img src="./src/assets/icons/twitter.svg" alt="twitter">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__rights">
+        <a href="#" class="footer__logo-link">Maroon</a>
+        <span class="footer__copyright">&copy; 2020 Все права защищены</span>
+      </div>
+
+      <a href="#" class="footer__policy-link" target="_blank">Политика конфиденциальности</a>
+    </div>
+  </div>
+  <!--//////////////////_footer -->
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>

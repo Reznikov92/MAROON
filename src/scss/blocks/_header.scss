@@ -1,14 +1,72 @@
-
 .header {
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: relative;
+    height: 10.2rem;
+    margin-bottom: 3rem;
 
+    &__header-bg-color {
+        background: #F8F8F6
+    }
+
+    // &__container {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     gap: 66.9rem;
+    //     max-width: 117rem;
+    // }
     &__container {
         display: flex;
-        justify-content: space-between;
-        gap: 669px;
-        max-width: 1170px;
-        padding: 39px 0 68px 0;
+        justify-content: space-between; // вместо огромного gap
+        align-items: center;
+        max-width: 117rem;
+        padding: 0 0.1rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    &-container {
+        border-bottom: 1px solid #DBDCE0;
+        margin-bottom: 36px;
+    }
+
+    &__button {
+        display: none;
+        width: 2.4rem;
+        height: 1.2rem;
+        position: relative;
+        top: -0.7rem;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 2.4rem;
+            height: 0.2rem;
+            background-color: #122947;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .3s ease;
+            position: absolute;
+        }
+
+        &::before {
+            box-shadow: 0 0.6rem 0 #122947, 0 1.2rem 0 #122947;
+        }
+
+        &-active {
+            &::before {
+                box-shadow: none;
+                transform: translateX(-50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translateX(-50%) rotate(-45deg);
+            }
+        }
     }
 
     &__info {
@@ -16,23 +74,130 @@
         gap: 5.1rem;
     }
 
+    &__social {
+        display: none;
+    }
+
     &__wrapper {
         display: flex;
         gap: 3.5rem;
     }
 
+    &__social-item {
+        display: none;
+    }
+
     &__icons {
         display: flex;
         gap: 2.8rem;
-
     }
 
     &__account {
-        max-width: 16px;
+        max-width: 1.6rem;
     }
 
     &__lock {
-        max-width: 18px;
+        max-width: 1.8rem;
     }
+}
 
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: -0.1rem;
+
+        &__container {
+            align-items: center;
+            gap: 21.2rem;
+            padding: 0 4.5rem;
+        }
+
+        &__wrapper {
+            display: none;
+        }
+
+        &__button {
+            display: block;
+        }
+
+        &__social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        &__logo {
+            margin-left: 3.8rem;
+        }
+
+        &__navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4rem;
+            position: absolute;
+            left: 0;
+            top: 10rem;
+            background-color: #F8F8F6;
+            width: 100vw;
+            padding: 5rem 0 6rem 4.5rem;
+            border-top: 0.1rem solid #DBDCE0;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        height: 7.6rem;
+
+        &__container {
+            max-width: 29rem;
+            gap: 4.3rem;
+            padding: 0 0;
+        }
+
+        &__logo {
+            width: 8.5rem;
+            height: 1.3rem;
+        }
+
+        &__button {
+
+            &::before,
+            &::after {
+                width: 2.2rem;
+            }
+        }
+
+        &__info {
+            gap: 0.1rem;
+
+            img {
+                width: 1.4rem;
+                height: 1.6rem;
+
+                &:first-child {
+                    margin-left: 1.2rem;
+                }
+            }
+        }
+
+        &__icons {
+            gap: 1.9rem;
+        }
+
+        &__navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4rem;
+            position: absolute;
+            left: 0;
+            top: 10rem;
+            background-color: #F8F8F6;
+            width: 100vw;
+            padding: 5rem 0 6rem 4.5rem;
+            border-top: 0.1rem solid #DBDCE0;
+        }
+    }
 }

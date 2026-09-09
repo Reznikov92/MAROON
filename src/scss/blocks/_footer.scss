@@ -1,0 +1,142 @@
+.footer {
+    background-color: #F4F1ED;
+
+    &__container {
+        align-items: center;
+        height: 13.9rem;
+        margin-left: 9.7rem;
+        display: flex;
+        gap: 6.9rem;
+        max-width: 130rem;
+        margin-right: 9.8rem;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 4rem;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #959595;
+        font-size: 1.2rem;
+        line-height: 100%;
+
+        border-top: 0.1rem solid #D1D1D1;
+        padding: 2.1rem 9.6rem 0 9.8rem;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+        }
+    }
+
+    &__bottom-span {
+        font-size: 1.8rem;
+        vertical-align: -0.3rem;
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        &__container {
+            align-items: center;
+            margin: 0;
+            padding: 5.9rem 4.5rem;
+            padding-bottom: 5.7rem;
+            height: auto;
+            gap: 4.9rem;
+        }
+
+        &__info {
+            gap: 2rem;
+        }
+
+        &__social {
+            gap: 2.5rem;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        &__bottom {
+            gap: 1rem;
+            padding: 2.2rem 4.3rem 0 4.5rem;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3rem;
+            padding: 5rem 1.5rem;
+            height: auto;
+        }
+
+        &__logo {
+            width: 85px;
+        }
+
+        &__info {
+            flex-direction: column;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 1rem;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 100%;
+            max-width: 168px;
+            justify-content: flex-start;
+            font-size: 1.4rem;
+        }
+
+        &__social {
+            gap: 3rem;
+        }
+
+        &__bottom {
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 2rem 1.5rem;
+        }
+
+        &__bottom {
+            gap: 2.5rem;
+            padding: 2rem 1.5rem;
+            align-items: flex-start;
+        }
+    }
+}

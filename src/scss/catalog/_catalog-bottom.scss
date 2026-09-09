@@ -1,0 +1,53 @@
+.catalog-bottom {
+    margin-bottom: 12.6rem;
+    margin-right: 9.8rem;
+    display: flex;
+    justify-content: flex-end;
+
+    &-product {
+        margin-bottom: 135px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 63.2rem;
+        margin-top: 1px;
+    }
+
+    &__pagination {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        &-one {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 145%;
+        }
+
+        &-eight {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 145%;
+            color: #9A9DA0;
+        }
+    }
+
+    &__hr {
+        width: 5rem;
+        height: 0.1rem;
+        background-color: #122947;
+        border: none;
+        margin: 0;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 3.2rem;
+    }
+}
+
+.viewed+.catalog-bottom {
+    margin-bottom: 13.3rem;
+}

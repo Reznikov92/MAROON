@@ -21,6 +21,11 @@ html {
   margin: 0 auto;
 }
 
+.container-catalog {
+  max-width: 117rem;
+  margin: 0 auto;
+}
+
 a {
   font-size: 1.6rem;
   font-weight: v.$font-weight;
@@ -33,4 +38,17 @@ a {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 140%;
+}
+
+@media (max-width:768px) {
+  .container {
+  max-width: 678px;
+}
+}
+
+@media (max-width:320px) {
+  .container {
+  max-width: 290px;
+  margin: 0 auto;
+}
 }

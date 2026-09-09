@@ -1,0 +1,102 @@
+.catalog-cards {
+    margin-bottom: 4.4rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__context {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1.4rem 2rem;
+        position: absolute;
+        inset: 0;
+    }
+
+    &__first-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__second-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: -2px;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 145%;
+    }
+
+    &__price-title {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+
+        img {
+            height: 0.9rem; // подберите размер под шрифт (обычно 1em или чуть больше)
+            width: auto; // сохраняет пропорции
+        }
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 145%;
+    }
+
+    &__descr {
+        text-align: left;
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 145%;
+        color: #9A9DA0;
+    }
+
+    &__weight {
+        white-space: nowrap;
+        font-size: 1.3rem;
+        line-height: 145%;
+        color: #9A9DA0;
+    }
+}
+
+@media (max-width:768px) {
+    .catalog-cards {
+        margin-top: 5px;
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+                gap: 33px;
+                row-gap: 30px;
+        }
+
+        &__context {
+
+max-width: 328px;
+
+        }
+
+        &__item {
+            max-width: 324px;
+
+            img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

@@ -2,15 +2,7 @@
 @use '../mixins' as m;
 
 .button {
-   @include m.button(7px 27px 9px)
-   
-
-
-
-
-
-
-    // color: v.$link-text-color;
+    @include m.button(7px 27px 9px) // color: v.$link-text-color;
     // background: v.$text-color-hero;
 
     // &-triangle {
@@ -50,6 +42,24 @@
     //     background: v.$link-text-color;
     //     transition: all 0.3s linear;
     // }
+}
+
+.button-hover {
+    position: relative;
+    isolation: isolate;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        clip-path: circle(0% at 50% 50%);
+        background-color: bisque;
+        transition: clip-path .7s ease;
+    }
+
+    &:hover::before {
+        clip-path: circle(100% at 50% 50%);
+    }
 }
 
 // .button__bestsellers{

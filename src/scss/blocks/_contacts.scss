@@ -1,0 +1,170 @@
+.contacts {
+    margin-bottom: 13.9rem;
+
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 130rem;
+        position: relative;
+    }
+
+    &__background {
+        background: url('/src/assets/contacts/background.png') center / cover no-repeat;
+        flex: 0 0 67rem;
+        z-index: 1;
+        transform: translateX(9.8rem);
+    }
+
+    &__content {
+        padding: 9.1rem 0 10rem 10rem;
+    }
+
+    &__title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 136%;
+        margin-bottom: 2.4rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7rem;
+
+        &:not(:last-of-type) {
+            margin-bottom: 2.2rem;
+        }
+    }
+
+    &__label {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 145%;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        max-width: 26.6rem;
+        line-height: 145%;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    &__map {
+        position: absolute;
+        z-index: 2;
+        top: 6.7rem;
+        right: 3rem;
+        width: 67rem;
+        height: 45.1rem;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        margin-bottom: 12rem;
+
+        &__background {
+            margin-left: 4.5rem;
+            width: 100%;
+            max-width: 67.8rem;
+            transform: none;
+            flex-basis: auto;
+        }
+
+        &__content {
+            padding: 5rem 6rem;
+            margin-bottom: 0.9rem;
+        }
+
+        &__map {
+            position: static;
+            max-width: 36.9rem;
+            width: 100%;
+            height: 37.4rem;
+            margin-top: 5rem;
+            margin-left: -32.3rem;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .contacts {
+        margin-bottom: 8rem;
+
+        &__container {
+            flex-direction: column;
+            max-width: 29rem;
+            margin: 0 auto;
+        }
+
+        &__background {
+            width: 100%;
+            max-width: 29rem;
+            margin-left: 0;
+            transform: none;
+            padding: 2.2rem 0.7rem 0 1rem;
+        }
+
+        &__content {
+            padding: 3rem 2rem;
+            margin-bottom: 3rem;
+        }
+
+        &__title {
+            font-size: 2.8rem;
+            font-family: 'Raleway';
+            font-weight: 500;
+            margin-bottom: 1.9rem;
+        }
+
+        &__label {
+            font-weight: 500;
+            font-size: 1.6rem;
+            margin-bottom: -0.2rem;
+
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            max-width: 100%;
+            line-height: 145%;
+            margin-bottom: -0.5rem;
+        }
+
+        &__social {
+            margin-top: 3.2rem;
+        }
+
+        &__map {
+            position: static;
+            width: 100%;
+            height: 28.1rem;
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+}
