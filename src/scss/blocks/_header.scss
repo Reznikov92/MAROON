@@ -12,12 +12,21 @@
         background: #F8F8F6
     }
 
+    // &__container {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     gap: 66.9rem;
+    //     max-width: 117rem;
+    // }
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; // вместо огромного gap
         align-items: center;
-        gap: 66.9rem;
         max-width: 117rem;
+        padding: 0 0.1rem;
+        margin: 0 auto;
+        width: 100%;
     }
 
     &-container {
@@ -99,7 +108,7 @@
         &__container {
             align-items: center;
             gap: 21.2rem;
-            padding: 4rem 0;
+            padding: 0 4.5rem;
         }
 
         &__wrapper {
@@ -139,40 +148,42 @@
 
 @media (max-width: 320px) {
     .header {
-        height: 76px;
+        height: 7.6rem;
+
         &__container {
             max-width: 29rem;
-            gap: 43px;
-            // padding: 4rem 0;
+            gap: 4.3rem;
+            padding: 0 0;
         }
 
         &__logo {
-            width: 85px;
-            height: 13px;
+            width: 8.5rem;
+            height: 1.3rem;
         }
 
         &__button {
 
-
             &::before,
             &::after {
-
-                width: 22px;
-
+                width: 2.2rem;
             }
         }
 
         &__info {
-            gap: 1px;
+            gap: 0.1rem;
 
             img {
-                width: 14px;
-                height: 16px;
+                width: 1.4rem;
+                height: 1.6rem;
 
-                &:first-child{
-                    margin-left: 3px;
+                &:first-child {
+                    margin-left: 1.2rem;
                 }
             }
+        }
+
+        &__icons {
+            gap: 1.9rem;
         }
 
         &__navigation {

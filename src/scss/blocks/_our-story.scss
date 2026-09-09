@@ -44,85 +44,39 @@
 
 @media (max-width: 768px) {
     .our-story {
-        margin-bottom: 6.1rem;
+        margin-bottom: 12rem;
 
         &__container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            transform: none;
-            padding: 0 1.5rem;
+            padding: 0 4.5rem;
             gap: 4.8rem;
-            width: 100%;
+            transform: none;
         }
 
         &__column-left {
+            grid-template-columns: repeat(2, 17.7rem);
+            grid-template-rows: repeat(2, 17.7rem);
+            width: 100%;
+            max-width: 35.4rem;
             transform: none;
-            flex-shrink: 0;
-            margin-left: 3rem;
-            margin-top: -2.5rem;
 
             div:nth-child(1),
             div:nth-child(4) {
                 display: none;
             }
-
-            /* Изменяем размеры сетки под планшет — уменьшаем ячейки картинок до 17.7rem */
-            grid-template-columns: repeat(2, 17.7rem);
-            grid-template-rows: repeat(2, 17.7rem);
-
-            /* Гарантируем, что сами теги img внутри грида сожмутся под новые ячейки */
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-
-
-            }
         }
 
         &__column-right {
             transform: none;
-            padding-top: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-            flex: 1;
-            padding-bottom: 2.4rem;
-        }
-
-        &__title {
-            margin-bottom: 1.2rem;
-            font-family: 'Raleway';
-            font-weight: 500;
-            font-size: 3.2rem;
-            width: 27.6rem;
-        }
-
-        &__text {
-            margin-bottom: 4.5rem;
-            max-width: 100%;
-            font-size: 1.8rem;
-            line-height: 145%;
-        }
-
-        &__button {
-            font-weight: 500;
-            font-size: 1.6rem;
-            width: 17rem;
-            height: 4.1rem;
-            transform: translateY(-1.1rem);
+            padding-top: 4.7rem;
         }
     }
-}
 
-@media (max-width: 320px) {
-    .our-story {
-
-        &__container {
-            flex-direction: column;
+    @media (max-width: 320px) {
+        .our-story {
+            &__column-left {
+                grid-template-columns: 1fr;
+                max-width: 30rem;
+            }
         }
     }
 }

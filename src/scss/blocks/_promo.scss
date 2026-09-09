@@ -1,5 +1,5 @@
 .promo {
-    background: url(/src/assets/promo/banner-1.jpg) center / cover no-repeat;
+    background: url(../assets/promo/banner-1.jpg) center / cover no-repeat;
     margin-bottom: 14rem;
 
     &__container {
@@ -32,25 +32,31 @@
     }
 }
 
+
 @media (max-width: 768px) {
     .promo {
-        background-position: 60%;
-        height: 43.2rem;
+        margin-bottom: 12rem;
+        height: auto;
+        padding: 12rem 0;
+        padding-top: 6.3rem;
+        padding-bottom: 0;
+        background-position: 60% center;
 
         &__container {
-            justify-content: flex-end;
-            transform: translateX(-9.8rem);
+            justify-content: center;
+            transform: none;
         }
 
         &__context {
-            margin-right: -1.8rem;
-            padding: 4rem 0;
-            width: 34.2rem;
-            padding-top: 8.7rem;
+            margin: 0 auto;
+            padding: 1.7rem;
+            max-width: 43%;
+            margin-right: 5.6rem;
+            padding-top: 2.4rem;
         }
 
-        &__button {
-            margin-bottom: 0;
+        &__title {
+            font-size: 3.2rem;
         }
     }
 }

@@ -7,6 +7,10 @@
     margin-bottom: 136px;
 
     @media (max-width:768px) {
-        margin-bottom: 126px;
+        margin-bottom: 10.7rem;
+    }
+
+    @media (max-width:320px) {
+        margin-bottom: 4.7rem;
     }
 }

@@ -41,7 +41,11 @@
     }
 
     &__button {
-        @include m.button(0.6rem 2.3rem 1rem 2.3rem)
+        @include m.button(0.6rem 2.3rem 1rem 2.3rem);
+
+        &.secondary {
+            display: none;
+        }
     }
 
     &__cards {
@@ -108,50 +112,188 @@
     }
 }
 
-@media (max-width:768px) {
+// @media (max-width:768px) {
+//     .bestsellers {
+//         overflow: hidden;
+
+//         &__container-hands {
+//             transform: translateX(54.6rem);
+//             margin-bottom: 12rem;
+//             margin-right: 480px;
+//         }
+
+//         &__container {
+//             gap: 3.4rem;
+//         }
+
+//         &__cards {
+//             overflow-x: auto;
+//             margin-right: 4.7rem;
+//         }
+
+//         &__card {
+//             flex-shrink: 0;
+
+//             &:nth-child(3),
+//             &:nth-child(4) {
+//                 display: none;
+//             }
+//         }
+
+//         &__card-content-wrapper {
+//             right: 5.1rem;
+//         }
+
+//         &__hands {
+//             align-self: flex-start;
+//             margin-left: 9.3rem;
+//         }
+//     }
+// }
+
+@media (max-width: 768px) {
     .bestsellers {
-        overflow: hidden;
+
+        margin-bottom: 12rem;
+        overflow: hidden; // Скрываем выход за экран
 
         &__container-hands {
-            transform: translateX(54.6rem);
-            margin-bottom: 12rem;
-            margin-right: 480px;
+            align-items: center;
+            margin-right: 0;
+            margin-bottom: 0;
+            transform: none;
         }
 
         &__container {
-            gap: 3.4rem;
+            align-items: center;
+            margin-left: 0;
+            gap: 1.9rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem 0 4.5rem;
+        }
+
+        &__info {
+            max-width: 23.4rem;
+            width: 100%;
+            padding-bottom: 6.7rem;
+        }
+
+        &__text {
+            max-width: 23.4rem;
+            width: 100%;
         }
 
         &__cards {
-            overflow-x: auto;
-            margin-right: 4.7rem;
+            display: flex;
+            overflow-x: auto; // Горизонтальный скролл
+            width: 100%;
+            margin-right: 0;
+            padding-bottom: 1rem;
         }
 
         &__card {
-            flex-shrink: 0;
-
-            &:nth-child(3),
-            &:nth-child(4) {
-                display: none;
-            }
-        }
-
-        &__card-content-wrapper {
-            right: 5.1rem;
+            flex-shrink: 0; // Карточки не сжимаются
+            width: 70%;
+            max-width: 23rem;
         }
 
         &__hands {
-            align-self: flex-start;
-            margin-left: 9.3rem;
+            align-self: center;
+            margin-left: 0;
+            display: flex;
+            gap: 3.2rem;
+            align-self: flex-end;
+            margin-right: 10.3rem;
         }
     }
 }
 
-@media (max-width:320px) {
+@media (max-width: 320px) {
     .bestsellers {
+        &__container-hands {
+            padding: 0 1.5rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
 
         &__container {
+            display: flex;
             flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-left: 0;
+            gap: 11px;
+            padding: 0 15px;
+        }
+
+        &__info {
+            width: 100%;
+            padding-top: 0;
+            text-align: center;
+            align-items: center;
+            padding-top: 5px;
+            padding-bottom: 0;
+        }
+
+        &__title {
+            font-size: 2.8rem;
+            font-weight: 500;
+            font-family: 'Raleway';
+            margin-bottom: 9px;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            line-height: 140%;
+            width: 200px;
+        }
+
+        &__button {
+            display: none;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 9px 28px 10px 26px;
+
+            &.secondary {
+                display: block;
+
+            }
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;
+            margin-right: 0;
+            overflow: visible; // Убираем горизонтальный скролл
+            margin-bottom: 40px;
+
+        }
+
+        &__card {
+            width: 100%;
+            max-width: 22rem;
+            position: static;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__card-content {
+            position: static;
+            margin-bottom: 0;
+            margin-top: -88px;
+        }
+
+        &__card-text {
+            margin-bottom: 5px;
+        }
+
+        &__hands {
+            display: none;
         }
     }
 }

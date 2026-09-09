@@ -59,40 +59,35 @@
     }
 }
 
-@media (max-width:768px) {
-    .footer {
-        margin-top: -20px;
 
+@media (max-width: 768px) {
+    .footer {
         &__container {
-            margin-left: 3.5rem;
-            width: 100%;
-            gap: 0;
+            align-items: center;
+            margin: 0;
+            padding: 5.9rem 4.5rem;
+            padding-bottom: 5.7rem;
+            height: auto;
+            gap: 4.9rem;
         }
 
         &__info {
-            font-size: 1.6rem;
-            padding-left: 3.9rem;
-
-        }
-
-        &__wrapper {
-            gap: 2.5rem;
-        }
-
-        &__logo {
-            padding: 1rem;
+            gap: 2rem;
         }
 
         &__social {
-            padding-right: 7.9rem;
-            display: flex;
-            gap: 2.6rem;
+            gap: 2.5rem;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
         }
 
         &__bottom {
-                  padding: 2.3rem 4.4rem;
-
-
+            gap: 1rem;
+            padding: 2.2rem 4.3rem 0 4.5rem;
         }
     }
 }

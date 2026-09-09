@@ -27,16 +27,22 @@
     }
 }
 
-@media (max-width:768px) {
-    .philosophy {
 
-        &__context {
-            padding: 9.2rem 5.4rem 10.1rem 5.5rem;
-            text-size-adjust: 99%;
+@media (max-width: 768px) {
+    .philosophy {
+        margin-bottom: 12rem;
+
+        &__container {
+            padding-bottom: 1.1rem;
         }
 
-        &__button {
-            padding: 0.8rem 2.5rem 1.1rem;
+        &__context {
+            padding: 9rem 1rem;
+            max-width: 90%;
+        }
+
+        &__title {
+            font-size: 3.2rem;
         }
     }
 }
