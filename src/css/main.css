@@ -624,6 +624,9 @@ button {
   }
 }
 @media (max-width: 320px) {
+  .bestsellers {
+    margin-bottom: 2.5rem;
+  }
   .bestsellers__container-hands {
     padding: 0 1.5rem;
     align-items: center;
@@ -635,33 +638,33 @@ button {
     align-items: center;
     width: 100%;
     margin-left: 0;
-    gap: 11px;
-    padding: 0 15px;
+    gap: 1.1rem;
+    padding: 0 1.5rem;
   }
   .bestsellers__info {
     width: 100%;
     padding-top: 0;
     text-align: center;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 0.5rem;
     padding-bottom: 0;
   }
   .bestsellers__title {
     font-size: 2.8rem;
     font-weight: 500;
     font-family: "Raleway";
-    margin-bottom: 9px;
+    margin-bottom: 0.9rem;
   }
   .bestsellers__text {
     font-size: 1.6rem;
     line-height: 140%;
-    width: 200px;
+    width: 20rem;
   }
   .bestsellers__button {
     display: none;
     font-weight: 500;
-    font-size: 14px;
-    padding: 9px 28px 10px 26px;
+    font-size: 1.4rem;
+    padding: 0.9rem 2.8rem 1rem 2.6rem;
   }
   .bestsellers__button.secondary {
     display: block;
@@ -674,7 +677,7 @@ button {
     width: 100%;
     margin-right: 0;
     overflow: visible;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   .bestsellers__card {
     width: 100%;
@@ -687,10 +690,10 @@ button {
   .bestsellers__card-content {
     position: static;
     margin-bottom: 0;
-    margin-top: -88px;
+    margin-top: -8.8rem;
   }
   .bestsellers__card-text {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
   }
   .bestsellers__hands {
     display: none;
@@ -747,6 +750,41 @@ button {
   }
   .promo__title {
     font-size: 3.2rem;
+  }
+}
+@media (max-width: 320px) {
+  .promo {
+    margin-bottom: 7.6rem;
+    padding: 2.4rem 0;
+    padding-top: 288px;
+    background-position: 65% -3px;
+    background-image: url(../assets/promo/banner320.png);
+  }
+  .promo__container {
+    justify-content: center;
+  }
+  .promo__context {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  .promo__title {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    font-family: "Raleway";
+    font-weight: 500;
+  }
+  .promo__text {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    line-height: 140%;
+  }
+  .promo__button {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
   }
 }
 .personal-care {
@@ -834,6 +872,59 @@ button {
     transform: none;
   }
 }
+@media (max-width: 320px) {
+  .personal-care {
+    margin-bottom: 8rem;
+  }
+  .personal-care__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .personal-care__background {
+    width: 100%;
+    max-width: 290px;
+    margin-left: 0;
+    flex-basis: auto;
+    padding-bottom: 48px;
+  }
+  .personal-care__context {
+    padding: 5rem 2.5rem;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+  .personal-care__title {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-bottom: 11px;
+  }
+  .personal-care__text {
+    font-size: 1.6rem;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 25px;
+  }
+  .personal-care__text p:first-child {
+    display: none;
+  }
+  .personal-care__button {
+    font-weight: 500;
+    font-size: 1.4rem;
+    width: 182px;
+    height: 40px;
+  }
+  .personal-care__background-oils {
+    position: static;
+    width: 100%;
+    max-width: 250px;
+    height: 25.2rem;
+    margin-left: 0;
+    margin-top: -59px;
+    background-size: 70%;
+    background-position: 2% -12px;
+  }
+}
 .philosophy {
   background: url("/src/assets/philosophy/philosophy.jpg") center/cover no-repeat;
   margin-bottom: 14.3rem;
@@ -873,6 +964,32 @@ button {
   }
   .philosophy__title {
     font-size: 3.2rem;
+  }
+}
+@media (max-width: 320px) {
+  .philosophy {
+    margin-bottom: 2rem;
+    background-position: 46% 0;
+  }
+  .philosophy__container {
+    padding: 0 1rem;
+  }
+  .philosophy__context {
+    padding: 5.5rem 2.7rem;
+    max-width: 100%;
+  }
+  .philosophy__title {
+    margin-bottom: 2.5rem;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 125%;
+  }
+  .philosophy__button {
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0.8rem 2.7rem 1.1rem 2.7rem;
+    margin-bottom: 0.5rem;
   }
 }
 .our-story {
@@ -937,10 +1054,45 @@ button {
     padding-top: 4.7rem;
   }
 }
-@media (max-width: 768px) and (max-width: 320px) {
+@media (max-width: 320px) {
+  .our-story {
+    margin-bottom: 3.1rem;
+  }
+  .our-story__container {
+    flex-direction: column-reverse;
+    padding: 5rem 3.5rem;
+    gap: 5rem;
+  }
   .our-story__column-left {
-    grid-template-columns: 1fr;
-    max-width: 30rem;
+    grid-template-columns: repeat(2, 14.5rem);
+    grid-template-rows: repeat(2, 14.5rem);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .our-story__column-right {
+    padding-top: 0;
+    text-align: center;
+  }
+  .our-story__title {
+    font-size: 2.8rem;
+    margin-bottom: 1.1rem;
+    font-family: "Raleway";
+    font-weight: 500;
+    line-height: 125%;
+  }
+  .our-story__text {
+    font-size: 1.6rem;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    line-height: 140%;
+    text-align: center;
+  }
+  .our-story__button {
+    font-weight: 500;
+    font-size: 1.4rem;
+    width: 146px;
+    height: 40px;
+    padding: 0;
   }
 }
 .contacts {
@@ -1040,8 +1192,51 @@ button {
   }
 }
 @media (max-width: 320px) {
+  .contacts {
+    margin-bottom: 8rem;
+  }
+  .contacts__container {
+    flex-direction: column;
+    max-width: 29rem;
+    margin: 0 auto;
+  }
   .contacts__background {
-    max-width: 290px;
+    width: 100%;
+    max-width: 29rem;
+    margin-left: 0;
+    transform: none;
+    padding: 2.2rem 0.7rem 0 1rem;
+  }
+  .contacts__content {
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+  }
+  .contacts__title {
+    font-size: 2.8rem;
+    font-family: "Raleway";
+    font-weight: 500;
+    margin-bottom: 1.9rem;
+  }
+  .contacts__label {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: -0.2rem;
+  }
+  .contacts__text {
+    font-size: 1.6rem;
+    max-width: 100%;
+    line-height: 145%;
+    margin-bottom: -0.5rem;
+  }
+  .contacts__social {
+    margin-top: 3.2rem;
+  }
+  .contacts__map {
+    position: static;
+    width: 100%;
+    height: 28.1rem;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 .footer {
@@ -1119,6 +1314,46 @@ button {
   .footer__bottom {
     gap: 1rem;
     padding: 2.2rem 4.3rem 0 4.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 5rem 1.5rem;
+    height: auto;
+  }
+  .footer__logo {
+    width: 85px;
+  }
+  .footer__info {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 100%;
+    max-width: 168px;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+  }
+  .footer__social {
+    gap: 3rem;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem 1.5rem;
+  }
+  .footer__bottom {
+    gap: 2.5rem;
+    padding: 2rem 1.5rem;
+    align-items: flex-start;
   }
 }
 .viewed {

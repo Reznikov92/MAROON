@@ -70,13 +70,53 @@
             padding-top: 4.7rem;
         }
     }
+}
 
-    @media (max-width: 320px) {
-        .our-story {
-            &__column-left {
-                grid-template-columns: 1fr;
-                max-width: 30rem;
-            }
+@media (max-width: 320px) {
+    .our-story {
+        margin-bottom: 3.1rem;
+
+        &__container {
+            flex-direction: column-reverse;
+            padding: 5rem 3.5rem;
+            gap: 5rem;
+        }
+
+        &__column-left {
+            grid-template-columns: repeat(2, 14.5rem);
+            grid-template-rows: repeat(2, 14.5rem);
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        &__column-right {
+            padding-top: 0;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 2.8rem;
+            margin-bottom: 1.1rem;
+            font-family: 'Raleway';
+            font-weight: 500;
+            line-height: 125%;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            max-width: 100%;
+            margin-bottom: 2.5rem;
+            line-height: 140%;
+            text-align: center;
+        }
+
+        &__button {
+            font-weight: 500;
+            font-size: 1.4rem;
+            // padding: 0.6rem 2rem 1rem 2rem;
+            width: 146px;
+            height: 40px;
+            padding: 0;
         }
     }
 }

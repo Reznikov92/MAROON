@@ -91,3 +91,52 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3rem;
+            padding: 5rem 1.5rem;
+            height: auto;
+        }
+
+        &__logo {
+            width: 85px;
+        }
+
+        &__info {
+            flex-direction: column;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 1rem;
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 100%;
+            max-width: 168px;
+            justify-content: flex-start;
+            font-size: 1.4rem;
+        }
+
+        &__social {
+            gap: 3rem;
+        }
+
+        &__bottom {
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 2rem 1.5rem;
+        }
+
+        &__bottom {
+            gap: 2.5rem;
+            padding: 2rem 1.5rem;
+            align-items: flex-start;
+        }
+    }
+}
