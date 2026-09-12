@@ -10,7 +10,7 @@
     }
 
     &__content {
-        margin: 4.2rem 0;
+        margin: 4rem -0.1rem;
     }
 
     &__title {
@@ -142,5 +142,180 @@
         font-size: 1.6rem;
         border: 0.1rem solid #B3BAC1;
 
+    }
+}
+
+@media (max-width: 768px) {
+    .product-main {
+        margin: 4rem 4.5rem 9.5rem;
+
+        &__container {
+            margin: 0 auto;
+            flex-direction: column;
+            gap: 3.3rem;
+        }
+
+        &__media {
+            max-width: 678px;
+            height: 470px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                background-position: 10% 10%;
+            }
+        }
+
+        &__content {
+            margin: 2rem 0;
+        }
+
+        &__title {
+            font-size: 3.2rem;
+            font-family: 'Raleway';
+            font-weight: 500;
+        }
+
+        &__description {
+            width: 100%;
+            text-size-adjust: 98%;
+            margin-left: 0.1rem;
+        }
+
+        &__descr {
+            font-size: 1.6rem;
+            line-height: 145%;
+            margin-bottom: 35px;
+        }
+
+        &__border {
+            width: 100%;
+            max-width: 37rem;
+        }
+
+        &__text {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 145%;
+            margin-right: 0.7rem;
+
+            p {
+                width: 100%;
+                max-width: 38rem;
+            }
+        }
+
+        &__item {
+            gap: 1.7rem;
+        }
+
+        &__price {
+            gap: 4.9rem;
+            font-size: 2.6rem;
+            font-weight: 500;
+            align-items: self-end;
+
+            p {}
+        }
+
+        &__button {
+            width: 21.4rem;
+            height: 4.1rem;
+        }
+    }
+}
+
+/* ---------- Телефон (до 320px) ---------- */
+@media (max-width: 320px) {
+    .product-main {
+        margin: 1.5rem 1.5rem 5rem;
+
+        &__container {
+            flex-direction: column;
+            /* картинка сверху, контент снизу */
+            align-items: center;
+            gap: 2rem;
+        }
+
+        &__media {
+            width: 100%;
+            max-width: 25rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            max-width: 29rem;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &__descr {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        &__description {
+            max-width: 100%;
+            margin-bottom: 2.5rem;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        &__border {
+            max-width: 100%;
+            /* линия на всю ширину карточки */
+        }
+
+        &__text {
+            h3 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                width: 100%;
+            }
+
+            .plus {
+                left: -0.5rem;
+                /* чуть прижимаем плюсик к тексту */
+            }
+
+            &.active {
+                height: auto;
+                /* фиксированная высота 13.7rem на мобилке ломает блок */
+                padding-bottom: 1rem;
+            }
+        }
+
+        &__item {
+            font-size: 1.6rem;
+            gap: 1rem;
+            margin: 2.5rem 0;
+        }
+
+        &__price {
+            flex-direction: column;
+            /* цена и кнопка в столбик */
+            align-items: flex-start;
+            gap: 1.5rem;
+            font-size: 2.2rem;
+        }
+
+        &__button {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 }

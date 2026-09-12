@@ -6,7 +6,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5.1rem;
+        gap: 5rem;
     }
 
     &__title {
@@ -19,5 +19,73 @@
     &__cards {
         display: flex;
         gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .viewed {
+        margin-bottom: 4.1rem;
+
+        &__container {
+            gap: 0;
+        }
+
+        &__context {}
+
+        &__title {
+            font-size: 3.2rem;
+            font-family: 'Raleway';
+            font-weight: 500;
+            margin-bottom: 52px;
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 324px);
+            /* 2 колонки */
+            gap: 3rem;
+            width: 100%;
+            max-width: 50rem;
+            margin-right: 177px;
+        }
+
+        &__item {
+
+            img {
+                max-width: 324px;
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .viewed {
+        margin-bottom: 3rem;
+
+        &__container {
+            gap: 2rem;
+        }
+
+        &__title {
+            font-size: 2.8rem;
+            padding: 0 70px;
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 500;
+            line-height: 125%;
+
+
+        }
+
+        &__cards {
+            grid-template-columns:290px;
+            grid-template-rows: 290px;
+            /* одна колонка */
+            gap: 1.5rem;
+            margin: 0;
+            margin-left: 33px;
+        }
     }
 }

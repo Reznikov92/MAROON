@@ -108,19 +108,25 @@
 
         &__info {
             flex-direction: column;
-            gap: 4rem;
+            gap: 3rem;
             align-items: flex-start;
         }
 
         &__wrapper {
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 2.5rem 4.3rem;
             text-align: center;
-            font-size: 1.4rem;
             line-height: 100%;
-            max-width: 168px;
+            max-width: 181px;
             justify-content: flex-start;
-            font-size: 1.4rem;
+
+            a:last-child{
+                    margin-left: -1.4rem;
+            }
+
+            a {
+                font-size: 1.4rem;
+            }
         }
 
         &__social {
@@ -129,14 +135,10 @@
 
         &__bottom {
             flex-direction: column;
-            gap: 0.5rem;
-            padding: 2rem 1.5rem;
-        }
-
-        &__bottom {
-            gap: 2.5rem;
-            padding: 2rem 1.5rem;
+            gap: 2rem;
+            padding: 2.6rem 1.5rem;
             align-items: flex-start;
+            font-size: 1.2rem;
         }
     }
 }

@@ -12,16 +12,9 @@
         background: #F8F8F6
     }
 
-    // &__container {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     gap: 66.9rem;
-    //     max-width: 117rem;
-    // }
     &__container {
         display: flex;
-        justify-content: space-between; // вместо огромного gap
+        justify-content: space-between; 
         align-items: center;
         max-width: 117rem;
         padding: 0 0.1rem;

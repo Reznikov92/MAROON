@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         width: 63.2rem;
-        margin-top: 1px;
+        margin-top: 0.1rem;
     }
 
     &__pagination {
@@ -49,5 +49,48 @@
 }
 
 .viewed+.catalog-bottom {
-    margin-bottom: 13.3rem;
+    margin-bottom: 13.4rem;
+}
+
+@media (max-width: 768px) {
+    .catalog-bottom {
+        justify-content: flex-end;
+        margin-right: 0;
+        margin-bottom: 10.5rem;
+        padding: 0 4.5rem;
+
+        &__container {
+            align-items: center;
+            gap: 20.9rem;
+            justify-content: flex-end;
+        }
+    }
+
+    .viewed+.catalog-bottom {
+    margin-bottom: 11.2rem;
+}
+
+}
+
+@media (max-width: 320px) {
+    .catalog-bottom {
+        margin-bottom: 6.4rem;
+        padding: 0 1.2rem;
+
+        &__container {
+            gap: 14.9rem;
+        }
+
+        &__pagination {
+            gap: 0.5rem;
+        }
+
+        &__hr {
+            width: 3rem;
+        }
+
+        &__nav {
+            gap: 3rem;
+        }
+    }
 }

@@ -1,5 +1,5 @@
 .philosophy {
-    background: url('/src/assets/philosophy/philosophy.jpg') center / cover no-repeat;
+    background: url('../assets/philosophy/philosophy.jpg') center / cover no-repeat;
     margin-bottom: 14.3rem;
 
     &__container {
@@ -57,11 +57,12 @@
         }
 
         &__context {
-            padding: 5.5rem 2.7rem;
+            padding: 2.7rem 0 5.5rem;
             max-width: 100%;
         }
 
         &__title {
+            white-space: pre-line;
             margin-bottom: 2.5rem;
             font-family: 'Raleway';
             font-weight: 500;
